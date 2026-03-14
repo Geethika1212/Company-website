@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>SkyEdge Innovations</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>SkyEdge Innovations</header>
+
+<div class="hero">
+<img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
+<div class="hero-text">Innovation Beyond Limits</div>
+</div>
+
+<div class="about">
+<h2>About Company</h2>
+<p>
+SkyEdge Innovations builds AI solutions, modern web platforms, and intelligent systems for industries worldwide.
+</p>
+</div>
+
+<div class="image-track">
+<div class="track" id="track">
+
+<img src="https://images.unsplash.com/photo-1551434678-e076c223a692">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyl4BkrvPT1Vj-ZvaGHaXZL_4Rk_P9slVbRw&s">
+
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+
+<img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4">
+
+</div>
+</div>
+
+<div class="box-container">
+
+<div class="box">
+<h3>Company Details</h3>
+Founded: 2017<br>
+Employees: 380<br>
+Industry: Artificial Intelligence
+</div>
+
+<div class="box">
+<h3>Company Directors</h3>
+CEO: Robert Taylor<br>
+CTO: Emma Johnson
+</div>
+
+</div>
+
+<footer>
+
+<div>
+Name: Geethika<br>
+Contact: 8074051768<br>
+Email: geethikaviswanadharao@gmail.com<br>
+LinkedIn: www.linkedin.com/in/geethika18
+</div>
+
+<div>
+Street: Pedatadepalli<br>
+Town: Tadepalligudem<br>
+District: West Godavari<br>
+State: Andhra Pradesh<br>
+Country: India
+</div>
+
+</footer>
+
+<script>
+
+let track=document.getElementById("track")
+let position=0
+let direction=1
+
+function move(){
+
+position+=direction
+
+track.style.transform="translateX("+position+"px)"
+
+if(position>200 || position<-200){
+direction*=-1
+}
+
+}
+
+setInterval(move,30)
+
+</script>
+
+</body>
+</html>
